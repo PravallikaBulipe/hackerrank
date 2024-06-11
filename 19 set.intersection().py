@@ -1,0 +1,10 @@
+def students_with_both_subscriptions(english, french):
+    english_set = set(english)
+    french_set = set(french)
+    both_subscriptions = english_set.intersection(french_set)
+    return len(both_subscriptions)
+n = int(input())
+english = list(map(int, input().split()))
+b = int(input())
+french = list(map(int, input().split()))
+print(students_with_both_subscriptions(english, french))
